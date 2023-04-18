@@ -1,0 +1,37 @@
+	.aWeek {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.course-oneday{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+	
+	.course-week{
+	/* 		display: flex;
+			flex-direction: column; */
+			/* justify-content: center; */
+			/* margin-top: 20rpx; */
+			
+			position: absolute;
+			
+
+			
+			/* font-size: 10rpx; */
+		}
+	.class-left{
+		position: absolute;
+	/* 	z-index:999; */
+	}
+	
+	.morning-afternoon-gap{
+		
+	}
+	.uni-form-item .title {
+			padding: 20rpx 0;
+		}
+	
+	.page{
+	}

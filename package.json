@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "jsencrypt": "^3.2.1",
+    "vue-axios": "^3.4.1",
+    "vue-fireworks": "^1.0.1",
+    "vue-particles": "^1.0.9"
+  }
+}

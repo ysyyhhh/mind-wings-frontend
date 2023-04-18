@@ -1,0 +1,76 @@
+	.aWeek {
+		display: flex;
+		flex-direction: column;
+		
+	}
+	.course-oneday{
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+	
+	.course-week{
+	/* 		display: flex;
+			flex-direction: column; */
+			/* justify-content: center; */
+			/* margin-top: 20rpx; */
+			
+			position: absolute;
+			
+
+			
+			/* font-size: 10rpx; */
+		}
+	.class-left{
+		position: absolute;
+	/* 	z-index:999; */
+	}
+	
+	.morning-afternoon-gap{
+		
+	}
+	.uni-form-item .title {
+			padding: 20rpx 0;
+	}
+	.allDays{
+		display: flex;
+		flex-direction: row;
+		position: relative;
+		text-align: center;
+		align-items: center;
+	}
+	.allDay{
+		/* display:flex; */
+		position: relative;
+		/* background-color: #e77c9c; */
+		background-color: #00FFFF;
+		border-radius:12rpx;
+		box-shadow: 2rpx 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.2);
+		/* border-radius: inherit; */
+		white-space: nowrap;
+		overflow:hidden;
+		/* text-overflow:ellipsis; */
+	}
+	.deadline{
+		/* position: relative; */
+		
+		position: absolute;
+		opacity: 0.9;
+		/* background-color: #66ccff; */
+		background-color: #FF69B4;
+		border-radius:12rpx;
+		box-shadow: 2rpx 2rpx 2rpx 1rpx rgba(0, 0, 0, 0.2);
+		/* border-radius: inherit; */
+		
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 2; 
+		overflow:hidden;
+		
+		/* text-overflow:ellipsis; */
+		
+		z-index: 999;
+	}
+	
+	.page{
+	}
