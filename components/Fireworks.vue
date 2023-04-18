@@ -14,7 +14,7 @@
 		props: {
 			duration: {
 				type: Number,
-				default: 1500 // 特效持续时间，默认为3秒
+				default: 1000 // 特效持续时间，默认为3秒
 			}
 		},
 		data(){

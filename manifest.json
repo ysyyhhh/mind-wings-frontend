@@ -1,8 +1,8 @@
 {
     "name" : "猪猪课表",
     "appid" : "__UNI__EC92A0E",
-    "description" : "1.0.73：修改了时刻表显示排序的bug",
-    "versionName" : "1.0.73",
+    "description" : "1.0.74：增加了right中deadline开始时间选择",
+    "versionName" : "1.0.74",
     "versionCode" : 101,
     "transformPx" : false,
     "app-plus" : {

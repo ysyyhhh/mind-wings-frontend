@@ -23,8 +23,15 @@
 
 
 			<view class="card bg-white padding">
+				<view style="display: flex;flex-direction: row;">
 				<view class="card-title" style="background-color: #E63935;">
 					deadline
+				</view>
+					<view class="card-start-time" style="background-color: #E63935;">
+						<uni-datetime-picker type="date" v-model="deadlineStartdate" @change="changeDeadlineStartdate">
+							{{deadlineStartdate}}
+						</uni-datetime-picker>
+					</view>
 				</view>
 				<view class="card-allTask">
 					<view v-for="(item,index) in deadlineList" :key="index">
@@ -323,7 +330,7 @@
 	var gastureY = 0
 	import addTask from '../../components/addTask'
 	import Fireworks from '../../components/Fireworks.vue'
-	import firework from '../../components/ay-firework/firework.vue'
+	// import firework from '../../components/ay-firework/firework.vue'
 	const weekStr = ["", "一", "二", "三", "四", "五", "六", "日"]
 	
 	const day = new Date().getDay();
@@ -333,7 +340,7 @@
 		components: {
 			addTask,
 			  Fireworks,
-			  firework,
+			  // firework,
 		},
 		data() {
 			return {
@@ -421,13 +428,21 @@
 				dayCard: true,
 				dayCardList: [],
 				 showFireworks: false,
-				 allDayStartdate : formatDayTime(preDate(new Date(),1) )
+				 allDayStartdate : formatDayTime(preDate(new Date(),1) ),
+			deadlineStartdate : formatDayTime(preDate(new Date(),1) )
+						
 			}
 		},
 		methods: {
 			changeAllDayStartdate(){
 				setTimeout(() => {
 				  	        this.initList('全天')
+				}, 100)
+				
+			},
+			changeDeadlineStartdate(){
+				setTimeout(() => {
+				  	        this.initList('deadline')
 				}, 100)
 				
 			},
@@ -523,8 +538,9 @@
 				console.log(this.allDayStartdate)
 				if(e == '全天'){
 					data.begDate = this.allDayStartdate
+				}else if(e == 'deadline'){
+					data.begDate = this.deadlineStartdate
 				}
-				// console.log(data)
 				let _this = this
 				uni.request({
 					url: url,
